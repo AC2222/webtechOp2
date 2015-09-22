@@ -1,13 +1,197 @@
-footer {
-	background-color: red;
-	clear: both;
+@media all and (min-width: 1000px) {
+	body {
+		margin: 0;
+		padding: 0;
+    overflow-y:hidden;
+		background-size: cover;
+		background-image: url("stagebackground.jpg");
+		background-repeat: no-repeat;
+	}
+
+	header {
+		height: 20vh;
+		padding-top: 1%;
+		text-align: center;
+		font-size: 100px;
+		width: 100%;
+	}
+
+	.headertitle {
+		color: #228DFF;
+  	font-family: Iceland;
+  	text-decoration: none;
+	}
+
+	header a:hover {
+  	-webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  	-moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  	animation: neon2 1.5s ease-in-out infinite alternate;
+	}
+	
+	footer {
+		clear: both;
+		height: 5vh;
+		text-align: center;
+		color: #228DFF;
+		font-family: Iceland;
+	}
+
+	.navigatie {
+		float: left;
+		height: 75vh;
+		width: 13%;
+		margin-left: 2px;
+	}
+
+	.main_text {
+		float: left;
+		padding-left: 2%;
+		color: #228DFF;
+		font-family: Iceland;
+	}
+
+	.main {
+		background-color: #13252D;
+		float: right;
+		margin-right: 5%;
+		height: 75vh;
+		width: 80%;
+		border: 2px solid;
+    border-radius: 20px;
+	}
+
+	.navigatie a {
+		text-decoration: none;
+		color: #8F9094;
+		color: #228DFF;
+  	font-family: Iceland;
+	}
+
+	.navigatie ul {
+		list-style-type: none;
+		padding: 0;
+		padding-top: 5%;
+		margin: 0;	 
+	}
+
+	.navigatie ul li{
+		margin-bottom: 5%;
+		padding: 5%;
+		vertical-align:top;
+		background-color: #13252D;
+		border: 2px solid;
+    border-radius: 20px;
+    text-align: center;
+	}
 }
 
-#navigatie {
-	float: left;
+@media all and (max-width: 1000px) {
+		body {
+		margin: 0;
+		padding: 0;
+    overflow-y:hidden;
+		background-size: 100% auto;
+		background-image: url("stagebackground.jpg");
+		background-repeat: no-repeat;
+	}
+
+	header {
+		height: 20vh;
+		padding-top: 1%;
+		text-align: center;
+		font-size: 100px;
+		width: 100%;
+	}
+
+	.headertitle {
+		color: #228DFF;
+  	font-family: Iceland;
+	}
+
+	header a:hover {
+  	-webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  	-moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  	animation: neon2 1.5s ease-in-out infinite alternate;
+	}
+
+	.main {
+		background-color: green;
+		height: 75vh;
+		width: 90%;
+		border: 2px solid;
+    border-radius: 20px;
+	}
+
+	.navigatie {
+		height: 75vh;
+		width: 10%;
+		margin-left: 2px; 
+	}
+
+	.navigatie a {
+		text-decoration: none;
+		color: #8F9094;
+		color: #228DFF;
+  	font-family: Iceland;
+	}
+
+	.navigatie ul {
+		list-style-type: none;
+		padding: 0;
+		padding-top: 5%;
+		margin: 0;	 
+	}
+
+	.navigatie ul li{
+		margin-bottom: 5%;
+		padding: 5%;
+		vertical-align:top;
+		background-color: #13252D;
+		border: 2px solid;
+    border-radius: 20px;
+    text-align: center;
+	}
 }
 
-a {
-	text-decoration: none;
-	color: #8F9094;
+@font-face {
+  font-family: 'Iceland';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Iceland'), local('Iceland-Regular'), url(F6LYTZLHrG9BNYXRjU7RSw.woff) format('woff');
 }
+
+@-webkit-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF,
+     0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF,
+     0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+@-moz-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF,
+     0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF,
+     0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF,
+     0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF,
+     0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+
+
