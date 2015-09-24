@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<title>Undercover</title>
+</head>
+<body>
+	<header> 
+		<a href="hoofdpagina.html" class="headertitle">Undercover</a>
+	</header>
+		<nav class="navigatie">
+			<ul>
+				<details>
+					<summary><a href="hoofdpagina.html">Hoofdpagina</a></summary>
+					<ul>
+						<li>Test</li>
+						<li>Test2</li>
+					</ul>
+				</details>
+				</li>
+				<li><a href="informatiepagina.html">Informatie</a></li>
+				<li><a href="evenementenpagina.html">Evenementen</a></li>
+				<li><a href="contactpagina.html">Contact</a></li>
+			</ul>
+		</nav>
+
+	<aside class="main">
+		<h4 class="main_header">Evenementen</h4>
+		<p class="main_text">Undercover staat dit jaar op de volgende evenementen:</p>
+	</aside>
+
+	<script type="text/javascript" src="listCollapse.js"></script>
+<script type="text/javascript">
+window.onload = function () {
+
+  //choose one of these options
+
+  //option 1 - no auto-child-collapse
+  //compactMenu('navigatie',false,'&plusmn; ');
+
+  //option 2 - auto-child-collapse
+  compactMenu('navigatie',true,'&plusmn; ');
+
+}
+</script>
+
+	<script type="text/javascript">
+		var allSpan = document.getElementsByTagName("navigatie");
+		for(var i = 0; i < allSpan.length; i++){
+		    allSpan[i].onclick=function(){
+		        if(this.parentNode){
+		            var childList = this.parentNode.getElementsByTagName('UL');
+		            for(var j = 0; j< childList.length;j++){
+		                var currentState = childList[j].style.display;
+		                if(currentState=="none"){
+		                    childList[j].style.display="block";
+		                }else{
+		                    childList[j].style.display="none";
+		                }
+		            }
+		        }
+		    }
+		}
+	</script>
+
+	<footer>By Ricardo Nijsink & Auke Crooijmans</footer>
+</body>
+</html>

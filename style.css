@@ -4,7 +4,7 @@
 		padding: 0;
     overflow-y:hidden;
 		background-size: cover;
-		background-image: url("stagebackground.jpg");
+		background-image: url("resources/stagebackground.jpg");
 		background-repeat: no-repeat;
 	}
 
@@ -44,10 +44,19 @@
 	}
 
 	.main_text {
-		float: left;
 		padding-left: 2%;
 		color: #228DFF;
 		font-family: Iceland;
+		font-size: 30px;
+	}
+
+	.main_header {
+		padding-left: 2%;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		color: #228DFF;
+		font-family: Iceland;
+		font-size: 40px;
 	}
 
 	.main {
@@ -67,6 +76,13 @@
   	font-family: Iceland;
 	}
 
+	details summary a {
+		list-style-type: none;
+		padding: 0;
+		padding-top: 5%;
+		margin: 0;
+	}
+
 	.navigatie ul {
 		list-style-type: none;
 		padding: 0;
@@ -74,7 +90,7 @@
 		margin: 0;	 
 	}
 
-	.navigatie ul li{
+	summary, .navigatie ul li{
 		margin-bottom: 5%;
 		padding: 5%;
 		vertical-align:top;
@@ -83,6 +99,7 @@
     border-radius: 20px;
     text-align: center;
 	}
+
 }
 
 @media all and (max-width: 1000px) {
@@ -91,7 +108,7 @@
 		padding: 0;
     overflow-y:hidden;
 		background-size: 100% auto;
-		background-image: url("stagebackground.jpg");
+		background-image: url("resources/stagebackground.jpg");
 		background-repeat: no-repeat;
 	}
 
@@ -157,7 +174,7 @@
   font-family: 'Iceland';
   font-style: normal;
   font-weight: 400;
-  src: local('Iceland'), local('Iceland-Regular'), url(F6LYTZLHrG9BNYXRjU7RSw.woff) format('woff');
+  src: local('Iceland'), local('Iceland-Regular'), url(resources/F6LYTZLHrG9BNYXRjU7RSw.woff) format('woff');
 }
 
 @-webkit-keyframes neon2 {
