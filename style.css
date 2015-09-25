@@ -85,11 +85,37 @@
   	font-size: 30px;
 	}
 
+	#slideshowdiv{
+		display:inline-block;
+		float : center;
+		display: table;
+    	margin: 0 auto;
+	}
+
+	#slide{
+		height: 400px;
+		max-width: 100%;
+	}
+
+	#leftbutton{
+		float: left;
+	}
+
+	#playbutton{
+		display: block;
+		margin-left: auto;
+    margin-right: auto;
+	}
+
+	#rightbutton{
+		float: right;
+	}
+
 	.navigatie a {
 		text-decoration: none;
 		color: #228DFF;
   	font-family: Iceland;
-  	font-size: 40px;
+  	font-size: 2vw;
 	}
 
 	details summary a {
@@ -97,7 +123,7 @@
 		padding: 0;
 		padding-top: 5%;
 		margin: 0;
-		font-size: 40px;
+		font-size: 2vw;
 	}
 
 	.navigatie ul {
@@ -206,6 +232,7 @@
 	}
 
 	.navigatie ul li{
+
     display: inline;
 	}
 }
