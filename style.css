@@ -2,14 +2,12 @@
 	body {
 		margin: 0;
 		padding: 0;
-    overflow-y:hidden;
 		background-size: cover;
 		background-image: url("resources/stagebackground.jpg");
 		background-repeat: no-repeat;
 	}
 
 	header {
-		height: 20vh;
 		padding-top: 1%;
 		text-align: center;
 		font-size: 100px;
@@ -22,7 +20,7 @@
   	text-decoration: none;
 	}
 
-	header a:hover {
+	header a {
   	-webkit-animation: neon2 1.5s ease-in-out infinite alternate;
   	-moz-animation: neon2 1.5s ease-in-out infinite alternate;
   	animation: neon2 1.5s ease-in-out infinite alternate;
@@ -47,7 +45,9 @@
 		padding-left: 2%;
 		color: #228DFF;
 		font-family: Iceland;
-		font-size: 30px;
+		font-size: 25px;
+		margin-right: 15%;
+		text-align: justify;
 	}
 
 	.main_header {
@@ -59,21 +59,37 @@
 		font-size: 40px;
 	}
 
+	.main_text_header {
+		padding-left: 2%;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		color: #228DFF;
+		font-family: Iceland;
+		font-size: 35px;
+	}
+
 	.main {
 		background-color: #13252D;
 		float: right;
 		margin-right: 5%;
-		height: 75vh;
 		width: 80%;
 		border: 2px solid;
     border-radius: 20px;
 	}
 
-	.navigatie a {
-		text-decoration: none;
-		color: #8F9094;
+	h5 {
+		margin-bottom: 5px;
+		padding-left: 2%;
 		color: #228DFF;
   	font-family: Iceland;
+  	font-size: 30px;
+	}
+
+	.navigatie a {
+		text-decoration: none;
+		color: #228DFF;
+  	font-family: Iceland;
+  	font-size: 40px;
 	}
 
 	details summary a {
@@ -81,6 +97,7 @@
 		padding: 0;
 		padding-top: 5%;
 		margin: 0;
+		font-size: 40px;
 	}
 
 	.navigatie ul {
@@ -98,18 +115,43 @@
 		border: 2px solid;
     border-radius: 20px;
     text-align: center;
+    outline: none;
+	}
+
+	.evenement_link {
+		text-decoration: none;
+		color: #FFFFFF;
+	}
+
+	.evenement_img {
+		margin-left: 2%;
+	}
+
+	.summary_item {
+		margin-bottom: 5%;
+		padding: 5%;
+		vertical-align:top;
+		background-color: #FFFFFF;
+		border: 2px solid;
+    border-radius: 20px;
+    text-align: center;
+    width: 80%;
+    outline: none;
 	}
 
 }
 
 @media all and (max-width: 1000px) {
-		body {
+	body {
 		margin: 0;
 		padding: 0;
     overflow-y:hidden;
-		background-size: 100% auto;
-		background-image: url("resources/stagebackground.jpg");
+		background: url("resources/stagebackground.jpg") no-repeat center center fixed;
 		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 	}
 
 	header {
@@ -125,50 +167,50 @@
   	font-family: Iceland;
 	}
 
-	header a:hover {
+	header a {
   	-webkit-animation: neon2 1.5s ease-in-out infinite alternate;
   	-moz-animation: neon2 1.5s ease-in-out infinite alternate;
   	animation: neon2 1.5s ease-in-out infinite alternate;
 	}
 
 	.main {
-		background-color: green;
-		height: 75vh;
-		width: 90%;
+		background-color: #13252D;
+		margin-right: 5%;
+		width: 70%;
 		border: 2px solid;
     border-radius: 20px;
 	}
 
-	.navigatie {
-		height: 75vh;
-		width: 10%;
-		margin-left: 2px; 
-	}
-
-	.navigatie a {
-		text-decoration: none;
-		color: #8F9094;
+	h5 {
 		color: #228DFF;
   	font-family: Iceland;
 	}
 
+	.navigatie {
+		display: inline;
+	}
+
+	.navigatie a {
+		text-decoration: none;
+		color: #228DFF;
+  	font-family: Iceland;
+  	display: block;
+    width: 60px;
+	}
+
 	.navigatie ul {
 		list-style-type: none;
-		padding: 0;
-		padding-top: 5%;
-		margin: 0;	 
+    margin: 0;
+    padding: 0;	
+    display: inline; 
 	}
 
 	.navigatie ul li{
-		margin-bottom: 5%;
-		padding: 5%;
-		vertical-align:top;
-		background-color: #13252D;
-		border: 2px solid;
-    border-radius: 20px;
-    text-align: center;
+    display: inline;
 	}
 }
+
+details summary::-webkit-details-marker { display:none; }
 
 @font-face {
   font-family: 'Iceland';

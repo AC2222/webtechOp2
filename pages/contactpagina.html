@@ -9,18 +9,32 @@
 	<header> 
 		<a href="hoofdpagina.html" class="headertitle">Undercover</a>
 	</header>
-		<nav class="navigatie">
-			<ul>
-				<li><a href="hoofdpagina.html">Hoofdpagina</a></li>
-				<li><a href="informatiepagina.html">Informatie</a></li>
-				<li><a href="evenementenpagina.html">Evenementen</a></li>
-				<li><a href="contactpagina.html">Contact</a></li>
-			</ul>
-		</nav>
+	
+	<nav class="navigatie">
+		<ul>
+			<li><a href="hoofdpagina.html">Hoofdpagina</a></li>
+			<details>
+				<summary><a href="informatiepagina.html">Informatie</a></summary>
+				<ul>
+				</ul>
+			</details>
+			<details>
+				<summary><a href="evenementenpagina.html">Evenementen</a></summary>
+					<ul>
+						<li id="summary_item"><a href="evenementenpagina.html#zwarte_cross">Zwarte cross</a></li>
+						<li id="summary_item"><a href="evenementenpagina.html#koningsdag_apeldoorn">Koningsdag Apeldoorn</a>
+						</li>
+						<li id="summary_item"><a href="evenementenpagina.html#dauwpop">Dauwpop</a></li>
+					</ul>
+			</details>
+			<li><a href="contactpagina.html">Contact</a></li>
+		</ul>
+	</nav>
 
 	<aside class="main">
 		<h4 class="main_header">Contact</h4>
 		<p class="main_text">Wilt u Undercover boeken? Dat kan via onderstaande contactgegevens.</p>
+		<p>Telefoon: ... <br>E-mail: ...<br></p>
 	</aside>
 
 	<footer>By Ricardo Nijsink & Auke Crooijmans</footer>
