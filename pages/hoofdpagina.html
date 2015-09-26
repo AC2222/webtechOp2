@@ -10,38 +10,31 @@
 		<a href="hoofdpagina.html" class="headertitle">Undercover</a>
 	</header>
 	
-	<nav class="navigatie">
-		<ul>
-			<li><a href="hoofdpagina.html">Hoofdpagina</a></li>
-			<details>
-				<summary><a href="informatiepagina.html">Informatie</a></summary>
-				<ul>
-				</ul>
-			</details>
-			<details>
-				<summary><a href="evenementenpagina.html">Evenementen</a></summary>
-					<ul>
-						<li id="summary_item"><a href="evenementenpagina.html#zwarte_cross">Zwarte cross</a></li>
-						<li id="summary_item"><a href="evenementenpagina.html#koningsdag_apeldoorn">Koningsdag Apeldoorn</a>
-						</li>
-						<li id="summary_item"><a href="evenementenpagina.html#dauwpop">Dauwpop</a></li>
-					</ul>
-			</details>
-			<li><a href="contactpagina.html">Contact</a></li>
-		</ul>
-	</nav>
+	<ul id="drop-nav">
+    <li><a href="hoofdpagina.html">Hoofdpagina</a></li>
+    <li><a href="informatiepagina.html">Informatie</a></li>
+    <li><a href="evenementenpagina.html">Evenementen</a>
+      <ul id="uitklaplijst">
+        <li class="uitklap_item"><a href="evenementenpagina.html#zwarte_cross">Zwarte Cross</a></li>
+        <li class="uitklap_item"><a href="evenementenpagina.html#koningsdag_apeldoorn">Koningsdag Apeldoorn</a></li>
+        <li class="uitklap_item"><a href="evenementenpagina.html#dauwpop">Dauwpop</a></li>
+      </ul>
+    </li>
+    <li><a href="contactpagina.html">Contact</a>
+    </li>
+  </ul>
 
-	<aside class="main">
+	<section class="main">
 		<script src="../slideShow.js"></script>
 		<h4 class="main_header">Dé coverband uit Enschede</h4>
 		<div id = "slideshowdiv">
-			<img id = "slide" src="../images/image1.jpg" ><br>
-			<img id = "leftbutton" src="../images/left.png" onclick ="moveslideback()">
-			<img id = "rightbutton" src="../images/right.png" onclick ="moveslide()">
-			<img id = "playbutton" src="../images/pauze.png" onclick ="pauzeorplay()">
+			<img id = "slide" src="../images/image1.jpg" alt="slide"><br>
+			<img id = "leftbutton" src="../images/left.png" alt="left" onclick ="moveslideback()">
+			<img id = "rightbutton" src="../images/right.png" alt="right" onclick ="moveslide()">
+			<img id = "playbutton" src="../images/pauze.png" alt="paue" onclick ="pauzeorplay()">
 		</div>
 		<p class="main_text">Populaire nummers uit zowel Nederlandse als internationale hitlijsten coveren? Undercover is de band die u zoekt!</p>
-	</aside>
+	</section>
 
 	<footer>By Ricardo Nijsink & Auke Crooijmans</footer>
 </body>
