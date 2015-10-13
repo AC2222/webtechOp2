@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link rel="stylesheet" type="text/css" href="../hooftpaginaslideshowstyle.css">
+	<script src="../hooftpaginaslideshowimagesloader.js"></script>
+	<title>Undercover</title>
+</head>
+<body>
+	<header> 
+		<a href="hoofdpagina.html" class="headertitle">Undercover</a>
+	</header>
+	
+	<ul id="drop-nav">
+    <li><a href="hoofdpagina.html">Hoofdpagina</a></li>
+    <li><a href="informatiepagina.html">Informatie</a></li>
+    <li><a href="evenementenpagina.html">Evenementen</a>
+      <ul id="uitklaplijst">
+        <li class="uitklap_item"><a href="evenementenpagina.html#zwarte_cross">Zwarte Cross</a></li>
+        <li class="uitklap_item"><a href="evenementenpagina.html#koningsdag_apeldoorn">Koningsdag Apeldoorn</a></li>
+        <li class="uitklap_item"><a href="evenementenpagina.html#dauwpop">Dauwpop</a></li>
+      </ul>
+    </li>
+    <li><a href="contactpagina.html">Contact</a>
+    </li>
+  </ul>
+
+	<section class="main">
+		<script src="../slideShow.js"></script>
+		<h4 class="main_header">Dé coverband uit Enschede</h4>
+		<div id = "slideshowdiv">
+			<img id = "slide" src="../images/slideshowimage1.jpg" alt="slide"><br>
+			<img id = "leftbutton" src="../images/left.png" alt="left" onclick ="moveslideback(0)">
+			<img id = "rightbutton" src="../images/right.png" alt="right" onclick ="moveslide(0)">
+			<img id = "playbutton" src="../images/pauze.png" alt="paue" onclick ="pauzeorplay(0)">
+		</div>
+		
+		<p class="main_text">Populaire nummers uit zowel Nederlandse als internationale hitlijsten coveren? Undercover is de band die u zoekt!</p>
+	</section>
+
+	<footer>By Ricardo Nijsink & Auke Crooijmans</footer>
+</body>
+</html>

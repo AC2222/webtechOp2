@@ -1,0 +1,23 @@
+	#slideshowdiv{
+		width: 400px;
+		display:inline-block;
+	}
+
+	.slideshow{
+		height: 300px;
+		max-width: 100%;
+	}
+
+	#leftbutton{
+		float: left;
+	}
+
+	#playbutton{
+		display: block;
+		margin-left: auto;
+    margin-right: auto;
+	}
+
+	#rightbutton{
+		float: right;
+	}
