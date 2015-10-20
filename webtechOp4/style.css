@@ -9,7 +9,20 @@
 a{
   font-family: TextFont;
   font-size: 30px;
-  padding-left, padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.table{
+  font-family: TextFont;
+}
+
+tr{
+  font-size: 20px;
+}
+
+.tableRowNames{
+  font-size: 30px;
 }
 
 label{
@@ -25,6 +38,97 @@ label{
 
 .dropdown-menu li a {
   color: #999;
+}
+
+.navbar-login
+{
+    width: 305px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.navbar-login-session
+{
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.icon-size{
+  font-size: 87px;
+}
+
+label{
+  color:black;
+  font-size: 20px;
+}
+
+#buttonLogin{
+  margin-top: 0;
+  padding: 5px;
+}
+
+.filmFotoDiv{
+  display: inline-block;
+}
+
+.filmTitel{
+  margin-top: 0;
+}
+
+.filmFoto{
+  max-height: 600px;
+  max-width: 400px;
+}
+
+.caption{
+  text-align: center;
+}
+
+.filmInformatieDiv{
+  text-align: left;
+}
+
+.row{
+  width: 100%;
+  margin: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+form{
+  margin-left: 5px;
+}
+
+body{
+  background-image: url("http://dijitalkoleksiyon.files.wordpress.com/2012/09/credits-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#indexBody{
+  text-align: center;
+}
+
+#filmsBody{
+  text-align: center;
+}
+
+h1{
+  font-family: HeaderFont;
+  font-size: 80px;
+  color: red;
+  text-shadow: 3px 0px 3px rgba(0, 0, 0, 1);
+}
+
+h2, h3{
+  font-family: TextFont;
+}
+
+#registreerLink{
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
 }
 
 .buttonNotflix {
@@ -79,40 +183,6 @@ label{
    color: #fff;
 }
 
-#buttonLogin{
-  margin-top: 0;
-  padding: 5px;
-}
-
-form{
-	margin-left: 5px;
-}
-
-body{
-	background-image: url("http://dijitalkoleksiyon.files.wordpress.com/2012/09/credits-background.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-#indexBody{
-  text-align: center;
-}
-
-h1{
-	font-family: HeaderFont;
-	font-size: 80px;
-	color: red;
-	text-shadow: 3px 0px 3px rgba(0, 0, 0, 1);
-	padding-left: auto;
-	padding-right: auto;
-}
-
-#registreerLink{
-  font-size: 20px;
-  text-decoration: none;
-  color: #fff;
-}
-
 form .has-error .control-label,
 form .has-error .help-block,
 form .has-error .form-control-feedback {
@@ -143,12 +213,12 @@ form .has-success .form-control-feedback {
   font-family: 'HeaderFont';
   font-style: normal;
   font-weight: 400;
-  src: local('HeaderFont'), local('HeaderFont-Regular'), url(kilogram_kg-webfont.woff) format('woff');
+  src: local('HeaderFont'), local('HeaderFont-Regular'), url(resources/kilogram_kg-webfont.woff) format('woff');
 }
 
 @font-face {
   font-family: 'TextFont';
   font-style: normal;
   font-weight: 400;
-  src: local('TextFont'), local('TextFont-Regular'), url(kankin-webfont.woff) format('woff');
+  src: local('TextFont'), local('TextFont-Regular'), url(resources/kankin-webfont.woff) format('woff');
 }

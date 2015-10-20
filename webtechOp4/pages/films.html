@@ -7,22 +7,17 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Notflix</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+   	<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-    <!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../index.js"></script>
 
-		<link rel="stylesheet" href="style.css">
-
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="../style.css">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,7 +26,7 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
   </head>
-  <body>
+  <body id="filmsBody">
 		<nav class="navbar navbar-inverse">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -48,27 +43,154 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
-		        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-		        <li><a href="#">Gebruikers</a></li>
+		        <li><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+		        <li><a href="gebruikers.html">Gebruikers</a></li>
 		        <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Films <span class="caret"></span></a>
 		          <ul class="dropdown-menu">
-		            <li><a href="#">Zoek films</a></li>
-		            <li><a href="#">Bekijk alle films</a></li>
+		            <li><a href="films.html">Zoek films</a></li>
+		            <li><a href="films.html">Bekijk alle films</a></li>
 		          </ul>
 		        </li>
 		      </ul>
-		      <form class="navbar-form navbar-right" role="search">
+		      
+		      <form class="navbar-form navbar-right">
 		        <div class="form-group">
-		          <input type="text" class="form-control" placeholder="Search">
+		          <input type="text" class="form-control" placeholder="Nickname">
+		          <input type="password" class="form-control" placeholder="Wachtwoord">
 		        </div>
-		        <button type="submit" class="btn btn-default">Submit</button>
+		        <button type="submit" class="buttonNotflix" id="buttonLogin">Login</button>
 		      </form>
+
+					<ul class="nav navbar-nav navbar-right" hidden>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              	<span class="glyphicon glyphicon-user"></span>
+            	  <strong id="loggedInUserNickname">...</strong>
+          	    <span class="glyphicon glyphicon-chevron-down"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <div class="navbar-login">
+                  	<div class="row">
+              	  		<div class="col-lg-4">
+                  			<p class="text-center">
+                    			<span class="glyphicon glyphicon-user icon-size"></span>
+                				</p>
+                  		</div>
+                      <div class="col-lg-8">
+                        <p class="text-left"><strong id="loggedInUserFullName">...</strong></p>
+                        <p class="text-left small" id="loggedInUserEmail">...</p>
+                        <p class="text-left">
+                          <a href="#" class="btn btn-primary btn-block btn-sm">...</a>
+                        </p>
+                       </div>
+                    </div>
+                  </div>
+              	</li>
+              	<li class="divider"></li>
+                	<li>
+                  	<div class="navbar-login navbar-login-session">
+                    	<div class="row">
+                      	<div class="col-lg-12">
+                        	<p>
+              	          	<a href="#" class="btn btn-danger btn-block">Log uit</a>
+                	      	</p>
+                      	</div>
+                  		</div>
+                  	</div>
+                	</li>
+              </ul>
+            </li>
+          </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
 
-    <h1>Notflix</h1>
+    <h1>Films</h1>
+
+		<div class="row">
+		  <div class="col-sm-6 col-md-4">
+		    <div class="thumbnail">
+		      <img src="http://miftyisbored.com/wp-content/uploads/2011/03/captain-america-movie-poster.jpg" alt="filmFoto" class="filmFoto">
+		      <div class="caption">
+		        <h2 class="filmTitel">Filmtitel</h2>
+				  	<h3>Informatie</h3>
+				  	<div class="filmInformatieDiv">
+				  		<label>Volledige titel:</label><br>
+					  	<label>Regisseur:</label><br>
+					  	<label>Releasedatum:</label><br>
+					  	<label>Acteurs:</label><br>
+					  	<label>Gemiddelde rating:</label>
+				  	</div>
+		        <p>
+		        	<a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" 
+		        	role="button">Button</a>
+		        </p>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col-sm-6 col-md-4">
+		    <div class="thumbnail">
+		      <img src="http://miftyisbored.com/wp-content/uploads/2011/03/captain-america-movie-poster.jpg" alt="filmFoto" class="filmFoto">
+		      <div class="caption">
+		        <h2 class="filmTitel">Filmtitel</h2>
+				  	<h3>Informatie</h3>
+				  	<div class="filmInformatieDiv">
+				  		<label>Volledige titel:</label><br>
+					  	<label>Regisseur:</label><br>
+					  	<label>Releasedatum:</label><br>
+					  	<label>Acteurs:</label><br>
+					  	<label>Gemiddelde rating:</label>
+				  	</div>
+		        <p>
+		        	<a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" 
+		        	role="button">Button</a>
+		        </p>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col-sm-6 col-md-4">
+		    <div class="thumbnail">
+		      <img src="http://miftyisbored.com/wp-content/uploads/2011/03/captain-america-movie-poster.jpg" alt="filmFoto" class="filmFoto">
+		      <div class="caption">
+		        <h2 class="filmTitel">Filmtitel</h2>
+				  	<h3>Informatie</h3>
+				  	<div class="filmInformatieDiv">
+				  		<label>Volledige titel:</label><br>
+					  	<label>Regisseur:</label><br>
+					  	<label>Releasedatum:</label><br>
+					  	<label>Acteurs:</label><br>
+					  	<label>Gemiddelde rating:</label>
+				  	</div>
+		        <p>
+		        	<a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" 
+		        	role="button">Button</a>
+		        </p>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col-sm-6 col-md-4">
+		    <div class="thumbnail">
+		      <img src="http://miftyisbored.com/wp-content/uploads/2011/03/captain-america-movie-poster.jpg" alt="filmFoto" class="filmFoto">
+		      <div class="caption">
+		        <h2 class="filmTitel">Filmtitel</h2>
+				  	<h3>Informatie</h3>
+				  	<div class="filmInformatieDiv">
+				  		<label>Volledige titel:</label><br>
+					  	<label>Regisseur:</label><br>
+					  	<label>Releasedatum:</label><br>
+					  	<label>Acteurs:</label><br>
+					  	<label>Gemiddelde rating:</label>
+				  	</div>
+		        <p>
+		        	<a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" 
+		        	role="button">Button</a>
+		        </p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
   </body>
 </html>
